@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF411DD41A3716DD00E90ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF411DD31A3716DD00E90ADD /* AppDelegate.swift */; };
+		FF411DD61A3716DD00E90ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF411DD51A3716DD00E90ADD /* ViewController.swift */; };
+		FF411DD91A3716DD00E90ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF411DD71A3716DD00E90ADD /* Main.storyboard */; };
+		FF411DDB1A3716DD00E90ADD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF411DDA1A3716DD00E90ADD /* Images.xcassets */; };
+		FF411DDE1A3716DD00E90ADD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF411DDC1A3716DD00E90ADD /* LaunchScreen.xib */; };
+		FF411DEA1A3716DD00E90ADD /* MZRIconButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF411DE91A3716DD00E90ADD /* MZRIconButtonTests.swift */; };
+		FF411DF41A37175D00E90ADD /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF411DF31A37175D00E90ADD /* IconButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF411DE41A3716DD00E90ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF411DC61A3716DD00E90ADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF411DCD1A3716DD00E90ADD;
+			remoteInfo = MZRIconButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF411DCE1A3716DD00E90ADD /* MZRIconButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZRIconButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF411DD21A3716DD00E90ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF411DD31A3716DD00E90ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF411DD51A3716DD00E90ADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF411DD81A3716DD00E90ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF411DDA1A3716DD00E90ADD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF411DDD1A3716DD00E90ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FF411DE31A3716DD00E90ADD /* MZRIconButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZRIconButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF411DE81A3716DD00E90ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF411DE91A3716DD00E90ADD /* MZRIconButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZRIconButtonTests.swift; sourceTree = "<group>"; };
+		FF411DF31A37175D00E90ADD /* IconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF411DCB1A3716DD00E90ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF411DE01A3716DD00E90ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF411DC51A3716DD00E90ADD = {
+			isa = PBXGroup;
+			children = (
+				FF411DD01A3716DD00E90ADD /* MZRIconButton */,
+				FF411DE61A3716DD00E90ADD /* MZRIconButtonTests */,
+				FF411DCF1A3716DD00E90ADD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF411DCF1A3716DD00E90ADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF411DCE1A3716DD00E90ADD /* MZRIconButton.app */,
+				FF411DE31A3716DD00E90ADD /* MZRIconButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF411DD01A3716DD00E90ADD /* MZRIconButton */ = {
+			isa = PBXGroup;
+			children = (
+				FF411DD31A3716DD00E90ADD /* AppDelegate.swift */,
+				FF411DD51A3716DD00E90ADD /* ViewController.swift */,
+				FF411DF31A37175D00E90ADD /* IconButton.swift */,
+				FF411DD71A3716DD00E90ADD /* Main.storyboard */,
+				FF411DDC1A3716DD00E90ADD /* LaunchScreen.xib */,
+				FF411DDA1A3716DD00E90ADD /* Images.xcassets */,
+				FF411DD11A3716DD00E90ADD /* Supporting Files */,
+			);
+			path = MZRIconButton;
+			sourceTree = "<group>";
+		};
+		FF411DD11A3716DD00E90ADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF411DD21A3716DD00E90ADD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF411DE61A3716DD00E90ADD /* MZRIconButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF411DE91A3716DD00E90ADD /* MZRIconButtonTests.swift */,
+				FF411DE71A3716DD00E90ADD /* Supporting Files */,
+			);
+			path = MZRIconButtonTests;
+			sourceTree = "<group>";
+		};
+		FF411DE71A3716DD00E90ADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF411DE81A3716DD00E90ADD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF411DCD1A3716DD00E90ADD /* MZRIconButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF411DED1A3716DD00E90ADD /* Build configuration list for PBXNativeTarget "MZRIconButton" */;
+			buildPhases = (
+				FF411DCA1A3716DD00E90ADD /* Sources */,
+				FF411DCB1A3716DD00E90ADD /* Frameworks */,
+				FF411DCC1A3716DD00E90ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZRIconButton;
+			productName = MZRIconButton;
+			productReference = FF411DCE1A3716DD00E90ADD /* MZRIconButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF411DE21A3716DD00E90ADD /* MZRIconButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF411DF01A3716DD00E90ADD /* Build configuration list for PBXNativeTarget "MZRIconButtonTests" */;
+			buildPhases = (
+				FF411DDF1A3716DD00E90ADD /* Sources */,
+				FF411DE01A3716DD00E90ADD /* Frameworks */,
+				FF411DE11A3716DD00E90ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF411DE51A3716DD00E90ADD /* PBXTargetDependency */,
+			);
+			name = MZRIconButtonTests;
+			productName = MZRIconButtonTests;
+			productReference = FF411DE31A3716DD00E90ADD /* MZRIconButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF411DC61A3716DD00E90ADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = molabo;
+				TargetAttributes = {
+					FF411DCD1A3716DD00E90ADD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FF411DE21A3716DD00E90ADD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FF411DCD1A3716DD00E90ADD;
+					};
+				};
+			};
+			buildConfigurationList = FF411DC91A3716DD00E90ADD /* Build configuration list for PBXProject "MZRIconButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF411DC51A3716DD00E90ADD;
+			productRefGroup = FF411DCF1A3716DD00E90ADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF411DCD1A3716DD00E90ADD /* MZRIconButton */,
+				FF411DE21A3716DD00E90ADD /* MZRIconButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF411DCC1A3716DD00E90ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF411DD91A3716DD00E90ADD /* Main.storyboard in Resources */,
+				FF411DDE1A3716DD00E90ADD /* LaunchScreen.xib in Resources */,
+				FF411DDB1A3716DD00E90ADD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF411DE11A3716DD00E90ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF411DCA1A3716DD00E90ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF411DF41A37175D00E90ADD /* IconButton.swift in Sources */,
+				FF411DD61A3716DD00E90ADD /* ViewController.swift in Sources */,
+				FF411DD41A3716DD00E90ADD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF411DDF1A3716DD00E90ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF411DEA1A3716DD00E90ADD /* MZRIconButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF411DE51A3716DD00E90ADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF411DCD1A3716DD00E90ADD /* MZRIconButton */;
+			targetProxy = FF411DE41A3716DD00E90ADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF411DD71A3716DD00E90ADD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF411DD81A3716DD00E90ADD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF411DDC1A3716DD00E90ADD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF411DDD1A3716DD00E90ADD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF411DEB1A3716DD00E90ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF411DEC1A3716DD00E90ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF411DEE1A3716DD00E90ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MZRIconButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF411DEF1A3716DD00E90ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MZRIconButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF411DF11A3716DD00E90ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MZRIconButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZRIconButton.app/MZRIconButton";
+			};
+			name = Debug;
+		};
+		FF411DF21A3716DD00E90ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MZRIconButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZRIconButton.app/MZRIconButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF411DC91A3716DD00E90ADD /* Build configuration list for PBXProject "MZRIconButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF411DEB1A3716DD00E90ADD /* Debug */,
+				FF411DEC1A3716DD00E90ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF411DED1A3716DD00E90ADD /* Build configuration list for PBXNativeTarget "MZRIconButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF411DEE1A3716DD00E90ADD /* Debug */,
+				FF411DEF1A3716DD00E90ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF411DF01A3716DD00E90ADD /* Build configuration list for PBXNativeTarget "MZRIconButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF411DF11A3716DD00E90ADD /* Debug */,
+				FF411DF21A3716DD00E90ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF411DC61A3716DD00E90ADD /* Project object */;
+}
