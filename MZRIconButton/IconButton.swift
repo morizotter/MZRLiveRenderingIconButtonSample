@@ -65,7 +65,7 @@ class IconButton: UIControl {
         let path = UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
         
         self.maskLayer.path = path.CGPath
-        self.layer.mask = maskLayer
+        self.layer.mask = self.maskLayer
         
         self.borderLayer!.path = path.CGPath
         self.borderLayer!.strokeColor = borderColor.CGColor
