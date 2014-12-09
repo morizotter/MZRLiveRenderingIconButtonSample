@@ -19,6 +19,11 @@ class IconButton: UIControl {
     
     var maskLayer: CAShapeLayer!
     var borderLayer: CAShapeLayer!
+    var circlePath: UIBezierPath {
+        get {
+            return UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
+        }
+    }
     
     override var highlighted: Bool {
         didSet {
@@ -62,12 +67,10 @@ class IconButton: UIControl {
         
         iconImage?.drawInRect(self.bounds)
         
-        let path = UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
-        
-        self.maskLayer.path = path.CGPath
+        self.maskLayer.path = self.circlePath.CGPath
         self.layer.mask = self.maskLayer
         
-        self.borderLayer!.path = path.CGPath
+        self.borderLayer!.path = self.circlePath.CGPath
         self.borderLayer!.strokeColor = borderColor.CGColor
         self.borderLayer!.lineWidth = self.lineWidth
     }
