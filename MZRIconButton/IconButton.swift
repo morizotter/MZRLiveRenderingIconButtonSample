@@ -16,6 +16,10 @@ class IconButton: UIControl {
     @IBInspectable var normalBorderColor: UIColor = UIColor.clearColor()
     @IBInspectable var highlightedBorderColor: UIColor = UIColor.clearColor()
     @IBInspectable var lineWidth: CGFloat = 0.0
+    
+    lazy var circlePath: UIBezierPath = {
+        return UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
+    }()
     var borderLayer: CAShapeLayer?
     
     override var highlighted: Bool {
@@ -24,10 +28,32 @@ class IconButton: UIControl {
         }
     }
     
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.commonInit()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.commonInit()
+    }
+    
+    func commonInit() {
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = self.circlePath.CGPath
+        self.layer.mask = maskLayer;
+        
+        self.borderLayer = CAShapeLayer()
+        self.borderLayer!.path = self.circlePath.CGPath
+        self.borderLayer!.fillColor = UIColor.clearColor().CGColor
+        self.layer.addSublayer(self.borderLayer!)
+    }
+    
     override func drawRect(rect: CGRect) {
         
         var iconImage: UIImage?
         var borderColor = UIColor.clearColor()
+        
         if self.highlighted {
             if let highlightedImage = self.highlightedImage {
                 iconImage = highlightedImage
@@ -42,19 +68,7 @@ class IconButton: UIControl {
         
         iconImage?.drawInRect(self.bounds)
         
-        let path = UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = path.CGPath
-        self.layer.mask = maskLayer;
-        
-        if self.borderLayer == nil {
-            self.borderLayer = CAShapeLayer()
-            self.borderLayer!.path = path.CGPath
-            self.borderLayer!.fillColor = UIColor.clearColor().CGColor
-            self.layer.addSublayer(self.borderLayer!)
-        }
         self.borderLayer!.strokeColor = borderColor.CGColor
         self.borderLayer!.lineWidth = self.lineWidth
-        self.borderLayer!.lineCap = kCALineCapRound;
     }
 }
