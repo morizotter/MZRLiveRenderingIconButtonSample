@@ -51,10 +51,10 @@ class IconButton: UIControl {
             self.borderLayer = CAShapeLayer()
             self.borderLayer!.path = path.CGPath
             self.borderLayer!.fillColor = UIColor.clearColor().CGColor
+            self.layer.addSublayer(self.borderLayer!)
         }
         self.borderLayer!.strokeColor = borderColor.CGColor
         self.borderLayer!.lineWidth = self.lineWidth
         self.borderLayer!.lineCap = kCALineCapRound;
-        self.layer.addSublayer(self.borderLayer!)
     }
 }
