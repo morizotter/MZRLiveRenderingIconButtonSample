@@ -11,16 +11,36 @@ import UIKit
 @IBDesignable
 class IconButton: UIControl {
     
-    @IBInspectable var iconImage: UIImage?
-    @IBInspectable var borderColor: UIColor = UIColor.clearColor()
+    @IBInspectable var normalImage: UIImage?
+    @IBInspectable var highlightedImage: UIImage?
+    @IBInspectable var normalBorderColor: UIColor = UIColor.clearColor()
+    @IBInspectable var highlightedBorderColor: UIColor = UIColor.clearColor()
     @IBInspectable var lineWidth: CGFloat = 0.0
     var borderLayer: CAShapeLayer?
     
+    override var highlighted: Bool {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
     override func drawRect(rect: CGRect) {
         
-        if let iconImage = self.iconImage {
-            iconImage.drawInRect(self.bounds)
+        var iconImage: UIImage?
+        var borderColor = UIColor.clearColor()
+        if self.highlighted {
+            if let highlightedImage = self.highlightedImage {
+                iconImage = highlightedImage
+                borderColor = self.highlightedBorderColor
+            }
+        } else {
+            if let normalImage = self.normalImage {
+                iconImage = normalImage
+                borderColor = self.normalBorderColor
+            }
         }
+        
+        iconImage?.drawInRect(self.bounds)
         
         let path = UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
         let maskLayer = CAShapeLayer()
@@ -32,7 +52,7 @@ class IconButton: UIControl {
             self.borderLayer!.path = path.CGPath
             self.borderLayer!.fillColor = UIColor.clearColor().CGColor
         }
-        self.borderLayer!.strokeColor = self.borderColor.CGColor
+        self.borderLayer!.strokeColor = borderColor.CGColor
         self.borderLayer!.lineWidth = self.lineWidth
         self.borderLayer!.lineCap = kCALineCapRound;
         self.layer.addSublayer(self.borderLayer!)
