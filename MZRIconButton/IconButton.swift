@@ -17,10 +17,8 @@ class IconButton: UIControl {
     @IBInspectable var highlightedBorderColor: UIColor = UIColor.clearColor()
     @IBInspectable var lineWidth: CGFloat = 0.0
     
-    lazy var circlePath: UIBezierPath = {
-        return UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
-    }()
-    var borderLayer: CAShapeLayer?
+    var maskLayer: CAShapeLayer!
+    var borderLayer: CAShapeLayer!
     
     override var highlighted: Bool {
         didSet {
@@ -39,12 +37,9 @@ class IconButton: UIControl {
     }
     
     func commonInit() {
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = self.circlePath.CGPath
-        self.layer.mask = maskLayer;
+        self.maskLayer = CAShapeLayer()
         
         self.borderLayer = CAShapeLayer()
-        self.borderLayer!.path = self.circlePath.CGPath
         self.borderLayer!.fillColor = UIColor.clearColor().CGColor
         self.layer.addSublayer(self.borderLayer!)
     }
@@ -53,7 +48,6 @@ class IconButton: UIControl {
         
         var iconImage: UIImage?
         var borderColor = UIColor.clearColor()
-        
         if self.highlighted {
             if let highlightedImage = self.highlightedImage {
                 iconImage = highlightedImage
@@ -68,6 +62,12 @@ class IconButton: UIControl {
         
         iconImage?.drawInRect(self.bounds)
         
+        let path = UIBezierPath(roundedRect: self.bounds, cornerRadius: CGRectGetWidth(self.bounds) / 2)
+        
+        self.maskLayer.path = path.CGPath
+        self.layer.mask = maskLayer
+        
+        self.borderLayer!.path = path.CGPath
         self.borderLayer!.strokeColor = borderColor.CGColor
         self.borderLayer!.lineWidth = self.lineWidth
     }
